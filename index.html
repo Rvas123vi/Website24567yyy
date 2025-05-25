@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Kerenmu!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="your-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <header>
+        <nav>
+            <div class="logo">Toko Online Kerenmu!</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Produk</a>
+                <a href="#info">Informasi</a>
+            </div>
+            <div class="theme-controls">
+                <button id="music-toggle" class="nav-button"><i class="fas fa-volume-up"></i></button>
+                <button id="theme-toggle" class="nav-button"><i class="fas fa-sun"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Temukan Produk Impianmu di Sini!</h1>
+        <p>Jelajahi koleksi terbaik kami.</p>
+        <button class="cta-button">Lihat Produk <i class="fas fa-arrow-down"></i></button>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Produk Unggulan</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Nama Produk 1">
+                <h3>Nama Produk 1</h3>
+                <button class="whatsapp-button" data-product="Nama Produk 1">Beli Sekarang <i class="fab fa-whatsapp"></i></button>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Nama Produk 2">
+                <h3>Nama Produk 2</h3>
+                <button class="whatsapp-button" data-product="Nama Produk 2">Beli Sekarang <i class="fab fa-whatsapp"></i></button>
+            </div>
+            <div class="product-card">
+                <img src="product3.jpg" alt="Nama Produk 3">
+                <h3>Nama Produk 3</h3>
+                <button class="whatsapp-button" data-product="Nama Produk 3">Beli Sekarang <i class="fab fa-whatsapp"></i></button>
+            </div>
+            <div class="product-card">
+                <img src="product4.jpg" alt="Nama Produk 4">
+                <h3>Nama Produk 4</h3>
+                <button class="whatsapp-button" data-product="Nama Produk 4">Beli Sekarang <i class="fab fa-whatsapp"></i></button>
+            </div>
+            <div class="product-card">
+                <img src="product5.jpg" alt="Nama Produk 5">
+                <h3>Nama Produk 5</h3>
+                <button class="whatsapp-button" data-product="Nama Produk 5">Beli Sekarang <i class="fab fa-whatsapp"></i></button>
+            </div>
+            <div class="product-card">
+                <img src="product6.jpg" alt="Nama Produk 6">
+                <h3>Nama Produk 6</h3>
+                <button class="whatsapp-button" data-product="Nama Produk 6">Beli Sekarang <i class="fab fa-whatsapp"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="info-section">
+        <h2>Informasi Pemilik</h2>
+        <div class="profile-info">
+            <div class="profile-circle">
+                <img src="your-profile.jpg" alt="Foto Profil">
+            </div>
+            <h3>Nama Lengkapmu</h3>
+            <p>Halo! Saya adalah pemilik toko online ini. Saya berkomitmen untuk menyediakan produk berkualitas tinggi dan layanan terbaik untuk Anda.</p>
+            <div class="contact-links">
+                <a href="mailto:your-email@example.com" class="contact-button"><i class="fas fa-envelope"></i> Kirim Email</a>
+                <a href="https://github.com/your-github" target="_blank" class="contact-button"><i class="fab fa-github"></i> Kunjungi GitHub</a>
+            </div>
+        </div>
+
+        <div class="calculator-container">
+            <h3>Mini Kalkulator</h3>
+            <input type="text" id="calc-display" readonly>
+            <div class="calc-buttons">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="clearDisplay()">C</button>
+            </div>
+        </div>
+    </section>
+
+    <button id="back-to-top" title="Kembali ke Atas"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <p>&copy; 2024 Toko Online Kerenmu. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
